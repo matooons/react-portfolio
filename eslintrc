@@ -1,0 +1,25 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "plugins": ["react", "prettier"],
+
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react"
+  ],
+
+  "rules": {
+    "no-console": "off",
+    "react/prop-types": 0,
+    "prettier/prettier": "error"
+  }
+}
