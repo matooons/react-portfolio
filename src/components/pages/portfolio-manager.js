@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import axios from "axios";
 
@@ -22,7 +21,7 @@ export default class PortfolioManager extends Component {
     this.clearPortfolioToEdit = this.clearPortfolioToEdit.bind(this);
   }
 
-  clearPortfolioToEdit () {
+  clearPortfolioToEdit() {
     this.setState({
       portfolioToEdit: {}
     });
@@ -71,7 +70,7 @@ export default class PortfolioManager extends Component {
   getPortfolioItems() {
     axios
       .get(
-        "https://jordan.devcamp.space/portfolio/portfolio_items?order_by=created_at&direction=desc",
+        "https://matthewlebaron.devcamp.space/portfolio/portfolio_items?order_by=created_at&direction=desc",
         {
           withCredentials: true
         }

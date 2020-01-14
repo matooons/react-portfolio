@@ -57,13 +57,13 @@ const NavigationComponent = props => {
           </NavLink>
         </div>
 
-        {props.loggedInStatus === "LOGGED_IN" ? (
-          dynamicLink("/portfolio-manager", "Portfolio Manager")
-        ) : null}
+        {props.loggedInStatus === "LOGGED_IN"
+          ? dynamicLink("/portfolio-manager", "Portfolio Manager")
+          : null}
       </div>
 
       <div className="right-side">
-        JORDAN HUDGENS
+        MATTHEW LEBARON
         {props.loggedInStatus === "LOGGED_IN" ? (
           <a onClick={handleSignOut}>
             <FontAwesomeIcon icon="sign-out-alt" />
